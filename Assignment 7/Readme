@@ -1,0 +1,6 @@
+Read Me:
+
+This program reads the records containing employee number (int) and their hourly rate(double), and 
+stores it in a heap priority queue using the employee number as the key. After the initial employee 
+records, it will ask if you want to insert, delete or quit to finish updating the records. Then it 
+will sort and display.

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.e4.ui.importer.wizard"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="true"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/tejas.pinjala/Downloads/DoubleCharachter"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/DoubleCharachter"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/UML_PNG FILES"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/Assignment7_Tejas_Pinjala.zip"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/Assignment6_Tejas_Pinjala.zip"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/Untitled.zip"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/TreesDataStructure.zip"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/Assignment4_TejasPinjala.zip"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/Assignment4.zip"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/Assignment_2.Tejas_Pinjala.zip"/>
+			<item value="/Users/tejas.pinjala/eclipse-workspace/CS 3345 (Data Structures and Algo)/JavaAssignment_Exports/assignment_0.Tejas_Pinjala.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+</section>

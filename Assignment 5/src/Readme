@@ -1,0 +1,6 @@
+Read Me:
+	
+This java file implements an AVL self balancing tree with integer nodes. The constructor
+methods are used to initialize the nodes and the height. insertNode method inserts a node
+within the tree. Where it then gets checks to see if the tree is balanced or not. If it is
+not balanced, it performs left or right rotations until it the AVL tree is balanced. 

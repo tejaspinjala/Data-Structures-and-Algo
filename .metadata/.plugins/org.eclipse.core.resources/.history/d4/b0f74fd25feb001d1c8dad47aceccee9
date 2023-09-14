@@ -1,0 +1,92 @@
+import java.util.*;
+
+public class Employees {
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        PriorityQueue<Employee> heap = new PriorityQueue<>();
+        
+        // Read in employee records
+        System.out.print("Enter number of employees: ");
+        int numEmployees = in.nextInt();
+        for (int i = 0; i < numEmployees; i++) {
+            System.out.print("Enter employee number and hourly rate: ");
+            int empNum = in.nextInt();
+            double hourlyRate = in.nextDouble();
+            Employee emp = new Employee(empNum, hourlyRate);
+            heap.add(emp);
+        }
+        
+        // Allow user to insert or delete records
+        while (true) {
+            System.out.print("Enter 'add', 'delete', or 'done': ");
+            String action = in.next();
+            if (action.equals("done")) {
+                break;
+            } else if (action.equals("add")) {
+                System.out.print("Enter employee number and hourly rate: ");
+                int empNum = in.nextInt();
+                double hourlyRate = in.nextDouble();
+                Employee emp = new Employee(empNum, hourlyRate);
+                heap.add(emp);
+            } else if (action.equals("delete")) {
+                System.out.print("Enter employee number to delete: ");
+                int empNum = in.nextInt();
+                boolean found = false;
+                PriorityQueue<Employee> tempHeap = new PriorityQueue<>();
+                while (!heap.isEmpty()) {
+                    Employee emp = heap.poll();
+                    if (emp.getEmpNum() == empNum) {
+                        found = true;
+                    } else {
+                        tempHeap.add(emp);
+                    }
+                }
+                heap = tempHeap;
+                if (!found) {
+                    System.out.println("Employee not found.");
+                }
+            } else {
+                System.out.println("Invalid input.");
+            }
+        }
+        
+        // Sort and display employee records
+        List<Employee> sortedList = new ArrayList<>();
+        while (!heap.isEmpty()) {
+            sortedList.add(heap.poll());
+        }
+        System.out.println("Sorted employee records:");
+        for (Employee emp : sortedList) {
+            System.out.println(emp);
+        }
+    }
+    
+    static class Employee implements Comparable<Employee> {
+        private int empNum;
+        private double hourlyRate;
+        
+        public Employee(int empNum, double hourlyRate) {
+            this.empNum = empNum;
+            this.hourlyRate = hourlyRate;
+        }
+        
+        public int getEmpNum() {
+            return empNum;
+        }
+        
+        public double getHourlyRate() {
+            return hourlyRate;
+        }
+        
+        public int compareTo(Employee other) {
+            return Integer.compare(empNum, other.empNum);
+        }
+        
+        public String toString() {
+            return "Employee #" + empNum + ", hourly rate: $" + hourlyRate;
+        }
+    }
+    
+}

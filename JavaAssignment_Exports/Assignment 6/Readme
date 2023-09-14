@@ -1,0 +1,8 @@
+Read Me:
+
+This java file implements the Dijkstra algorithm to find the shortest path (distance)
+between one state to the rest of states. First, the two dimensional array is initialized
+and the values are set to infinity. The array contains the previous state and the current
+state. All the states are initially set to unvisited and the distance is updated when the 
+state gets visited. The algorithm also updates the distance if it finds an alternative
+shortest path.
